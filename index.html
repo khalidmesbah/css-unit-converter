@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
-    <label for="value">write in pixels</label>
-    <input type="number" id="value" value="100">
-    <br>
-    <br>
-    <div class="results" id="results">
-        <div id="cm"></div>
-        <div id="mm"></div>
-        <div id="q"></div>
-        <div id="inn"></div>
-        <div id="pc"></div>
-        <div id="pt"></div>
+  <body class="bg-primary">
+    <div class="cantainer w-75 m-auto">
+      <div class="row m-auto">
+        <div class="col">
+          <div class="input-group w-50 m-auto mb-5 mt-1">
+              <input class="form-control" type="number" id="value-in-pixels" value="100" />
+              <div class="input-group-text">px</div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-auto">
+        <div class="col">
+            <div class="results d-flex justify-content-center flex-wrap gap-3" id="results">
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="cm"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="mm"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="q"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="inc"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="pc"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="pt"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="pe"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="vw"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="vh"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="em"></div>
+                <div class="unit btn-outline-dark text-white border-5 btn pt-2 pb-2 fs-4 text-center rounded-3" id="rem"></div>
+              </div>
+              <div class="text-capitalize alert alert-info text-center m-auto w-25 mt-5">try ch & ex</div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
