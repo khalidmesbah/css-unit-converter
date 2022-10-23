@@ -58,9 +58,8 @@ update({ target: { value: 100 } });
 
 /* event listeners */
 ValueInPixels.addEventListener(`input`, update);
-units.forEach(unit=>{
-  unit.addEventListener(`click`,()=>{
-    copyToClipboard(unit.textContent)
-  })
-})
-
+units.forEach((unit) => {
+  unit.addEventListener(`click`, () => {
+    copyToClipboard(unit.textContent);
+  });
+});
